@@ -7,10 +7,10 @@
 /*!
  * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=ae189b1b79cc9dbee37d)
  * Config saved to config.json and https://gist.github.com/ae189b1b79cc9dbee37d
- */
+ *
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-  font-family: sans-serif;
+  
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -63,10 +63,6 @@ strong {
 }
 dfn {
   font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 mark {
   background: #ff0;
@@ -1206,15 +1202,6 @@ h6 .small,
   line-height: 1;
   color: #777777;
 }
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 h1 small,
 .h1 small,
 h2 small,
@@ -1944,7 +1931,7 @@ pre code {
     width: 33.33333333%;
   }
   .col-md-3 {
-    width: 25%;
+    width: 32%;
   }
   .col-md-2 {
     width: 16.66666667%;

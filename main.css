@@ -1,8 +1,152 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-body {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: green;
+html {
+	padding: 0;
+	margin: 0;
+	
 }
+body {
+	margin:0;
+}
+
+.logo {
+    width: 321px;
+    height: 157px;
+    background-color: black;
+    color: white;
+    padding: 31px;
+	display: inline-block;
+	margin-left: -8px;
+}
+
+
+.sign-up {
+    height: 137px;
+    width: 117px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding-top: 82px;
+    padding-left: 14px;
+    margin-left: -4px;
+}
+.quote-scroll {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    height: 219px;
+    width: 719px;
+    position: relative;
+    padding-right: 25px;
+    margin-left: 506px;
+    margin-top: -219px;
+    margin-bottom: 14px;
+}
+.quote {
+  position: absolute;
+  margin: 50px 50px;
+  height: 80px;
+  top: 0;
+ color: black;
+ 
+  opacity: 0;
+  -moz-opacity: 0;
+  filter:alpha(opacity=0);
+}
+.quote h3 {
+  color: #fff;
+}
+ 
+.quote small { 
+  color: #fff;
+}
+.quote p {
+  background: #fff;
+  text-align: center;
+ 
+  position: absolute;
+  left: 187px; top: -32px;
+  padding: 30px;
+  width: 400px;
+ 
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.quote p:after {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  margin-top: -10px;
+  border: solid transparent;
+  border-right-color: #fff;
+  border-width: 10px;
+}
+@-webkit-keyframes "quoteshift" {
+ 0% {
+   opacity: 0;
+ }
+ 2% {
+   opacity: 1;
+ }
+ 31% {
+   opacity: 1;
+ }
+ 33% {
+   opacity: 0;
+ }
+ 100% {
+   opacity: 0;
+ }
+}
+.quote:nth-child(1) {
+  -webkit-animation: quoteshift 30s 0s infinite linear;
+  -moz-animation:quoteshift 30s 0s infinite linear;
+}
+ 
+.quote:nth-child(2) {
+  -webkit-animation: quoteshift 30s 10s infinite linear;
+	 -moz-animation:quoteshift 30s 0s infinite linear;
+}
+ 
+.quote:nth-child(3) {
+  -webkit-animation: quoteshift 30s 20s infinite linear;
+	-moz-animation:quoteshift 30s 0s infinite linear;
+}
+
+.social {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: -237px;
+    height: 179px;
+    width: 60px;
+    margin-left: 1250px;
+    margin-bottom: 10px;
+    float: right;
+    position: relative;
+}
+	
+.social-links {
+	list-style: none;
+	position: fixed;
+}
+         
+						<div class="features-list">
+			
+							<ul class="features">
+		
+						<div id="explainer-video" class="container-fluid">
+	
+			<div id="description" class="About">
+
+			<div class="logo2">
+
+			<div id="site-links" class="site-links">
+								<ul class="links">
+
+					<div id="footer" class="footer">
