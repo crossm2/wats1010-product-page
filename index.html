@@ -7,22 +7,20 @@
         <title>API Superstore</title>
 		<meta name="description" content="The API Superstore has partnered with API providers across the Web to bring you easy access to the hottest third party services and features. Get started today!">
        <link rel="stylesheet" href="main.css">
-        <!-- End Bootstrap CSS Framework -->
-
-        <!-- TODO: replace favicon, apple-touch-icon, and tile images to best
-             support bookmarking. -->
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="favicon" href="favicon.ico">
 
     </head>
     <body>
+		<div id="wrapperHeader" class="header">
 				<div class="logo">
-					<h1><img class="logo-img" width="300" height="60" src="assets/logos/api_superstore_logo_bg.png" alt="API Superstore Logo"><br>
+					<h1><img class="logo-img" src="assets/logos/api_superstore_logo_bg.png" alt="API Superstore Logo"><br>
 						Save Time, Get API's!</small>
 					</h1>
 				</div>
 						<div class="sign-up">
-							<h2><u>Sign-Up Now!</u></h2>
+							<a href="https://www.facebook.com/suwebdev/" class="su-button">Sign-Up Now</a>
 		</div>
 		<div class="quote-scroll">
   					<div class="quote">
@@ -46,14 +44,16 @@
 		</div>
         <div id="social" class="social">
             <ul class="social-links">
-				<li><b>Share<b></li>
-                <li class="twitter"><a href="http://twitter.com" alt= "twitter"><img src="twitter1.ico"></a></li>
-                <li class="facebook"><a href="http://facebook.com" alt= "facebook"><img src="facebook.ico"></a></li>
-                <li class="instagram"><a href="http://instagram.com" alt= "instagram"><img src="instagram(1).ico"></a></li>
+				<li class="share"><b>Share<b></li>
+				<li class="linkedin"><a href="http://linkedin.com" alt= "linkedin"><img src="linkedin.png"></a></li>
+				<li class="twitter"><a href="http://twitter.com" alt= "twitter"><img src="twitter.png"></a></li>
+                <li class="facebook"><a href="http://facebook.com" alt= "facebook"><img src="facebook.png"></a></li>
+                
             </ul>
         </div>
+			</div>
 						<div class="features-list">
-							<h3>Sign-up and Save With:</h3>
+							<h4><b>Sign-up and Save With:</b></h4>
 							<ul class="features">
 								<li> Links to the best APIs from all over the web </li>
 								<li> Pay with credit, check, IOU, wire transfer, PayPal, or livestock trade!</li>
@@ -61,28 +61,20 @@
 								<li> Elegant shopping experience</li>
 							</ul>
 						</div>
-						<div id="explainer-video" class="container-fluid">
-							<div class="row">
-								<div class="col-md-6 bg-success">
-									<iframe width="620" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen>
+						<div id="explainer-video" class="video">
+									<iframe width="900" height="500" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen>
 									</iframe>
 						</div>
-										</div>
-									</div>
-								</div>
-			<div id="description" class="About">
+		<div class="About">
 						<h3>About Our Product</h3>
-  						<p>The API Superstore provides fast access to the most cutting­edge APIs available online.We have partnered with API providers across the Web to bring you easy
-						access to the hottest third­party services and features that you can use to enhance your business. From e­commerce to maps, API Superstore lists all of the services that customers
+				<input type="checkbox" class="read-more-state" id="description" />
+  						<p class="read-more-wrap">The API Superstore provides fast access to the most cutting­edge APIs available online.We have partnered with API providers across the Web to bring you easy
+						access to the hottest third­party services and features that you can use to enhance your business. <span class="read-more-target">From e­commerce to maps, API Superstore lists all of the services that customers
 						expect and saves you the headache of sorting it out yourself! The longer you wait, the longer
-						you’re not making more money and happier users, sign-up today!</p>
- 						<p class="read-more"><a href="#" class="button">Read More</a></p>
+							you’re not making more money and happier users, sign-up today!</span></p>
+				<label for="description" class="read-more-trigger"></label>
 					</div>
-			<div class="logo2">
-						<h1><img class="logo" width="300" height="60" src="assets/logos/api_superstore_logo_bg.png" alt="API Superstore Logo"><br>
-						<small>Click, click, code!</small>
-					</h1>
-				</div>
+	<div id="wrapperfooter" class="footer">
 			<div id="site-links" class="site-links">
 								<ul class="links">
 									<li class="privacy-policy"><a href="#" class="button">Privacy Policy</a></li>
@@ -93,13 +85,40 @@
 									<li class="about-us"><a href="#" class="button">About Us</a></li>
 								</ul>
 							</div>
-					<div id="footer" class="footer">
-								<h3>Contact Us</h3>
-								<ul>
-									<li>Phone: 206­555­1234</li>
-									<li>Email: info@apisuperstore.com</li>
-									<li>Location: Seattle, Washington, USA</li>
-								</ul>
-							</div>
+		<a href="#openModal" class="contact">Contact API Service</a>
+<div id="openModal" class="modalDialog">
+			<a href="#close" title="Close" class="close">X</a>
+		<h2>Contact API Service</h2>
+	<ul>
+		<li>Phone: 206-555-1234</li>
+		<li>Email: info@apisuperstore.com</li>
+		<li>Location: Seattle, Washington, USA</li>
+	</ul>
+	<div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+      </p>
+      
+      
+      <div class="submit">
+        <input type="submit" value="SEND" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+	</div>
+</div>
+
     </body>
 </html>
